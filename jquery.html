@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Effects of Jquery on the web page</title>
+<link rel="stylesheet" href="jquery.css" type="text/css">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+</script>
+</head>
+
+<body>
+    <main>
+   <div id ="wrapper">
+       <div id="section-one" class="grid">
+            <h3>iPhone SE</h3>
+            <p>Lots of love.Less to spend</p>
+            <a href="" id="link-1">learn more</a>
+       </div>
+       <div id="section-two">
+           <h3>iPhone 11</h3>
+    <p>just the right amount of everything</p>
+            <a href="" id="link-1">learn more</a>
+           
+    </div><!--
+    <div id="section-three">
+        <h3>iPod Pro</h3>
+    <p>your next computer is not a computer</p>
+            <a href="" id="link-1">learn more</a>
+           
+    </div>-->
+    <div id="section-four">
+        <h3>watch</h3>
+        <h5>series 5</h5>
+    <p>With the Always-On Retina display 
+        You've never seen a watch like this</p>
+            <a href="" id="link-1">learn more</a>
+           
+    </div>
+    <div id="section-five">
+        <h3>iMac</h3>
+    <p >The all-in-one for all</p>
+            <a href="" id="link-1">learn more</a>
+           
+    </div>
+    <div id="section-six">
+        <h3>tv+</h3>
+        <p id="para1">Get one year of apple TV+ free when you buy an Apple device.<sup>1</sup></p>
+           
+    </div>
+    <div id="section-seven">
+        <h3>arcade</h3>
+        <p id="para1">calling all players.
+            Hundrends of worlds.zero ads.
+        </p>
+           <a href="">learn more</a> <a href="">Try free<sup>2</sup></a>
+    </div>
+    <div id="section-eight">
+        <p id="para">1.Apple Tv+ is R89.99/month 
+            after free trial.one subcriptin per Family 
+            sharing group. Other valid for three months
+             after eligible device activation. Plan 
+             automatically until cancelled.
+              Registrations and other terms apply.</p>
+
+              <p id="para">2.R84.99/month after free trial. No commitment. Plan automatically renews after trial until cancelled</p>
+              <p id="para">Magic keyboard sold separetely.</p>
+              <p id="para">Not all straps available in all regions.</p>
+
+           
+    </div>
+    <div id="section-nine">
+        <p class="accordion">Explore</p>
+        <div class="panel">
+            <a href="">iPad</a>
+            <a href="">Watch</a>
+            <a href="">Tv</a>
+            <a href="">Airpod</a>
+            <a href="">iPhone</a>
+            <a href="">Musis</a>
+            <a href="">Mac</a>
+            <a href="">IPad touch</a>
+        </div>
+        <p class="accordion">Services</p>
+        <div class="panel">
+            <a href="">Apple Music<a/>
+           <a href=""> Apple TV+</a>
+            <a href="">Apple Arcade</a>
+            <a href="">iCloud</a>
+        </div>
+        <p class="accordion">Account</p>
+        <div class="panel">
+            <a href="">Manage Your Apple ID</a>
+            <a href="">iCloud.com</a>
+
+        </div>
+        <p class="accordion">for Business</p>
+        <div class="panel">
+                        <a href="">Apple and business</a>
+
+        </div>
+        <p class="accordion">For Education</p>
+        <div class="panel">
+                        <a href="">Apple and Education</a>
+        </div>
+        <p class="accordion">Apple Values</p>
+        <div class="panel">
+                    <a href="">Privacy</a>
+
+        </div>
+        <p class="accordion">About Apple</p>
+        <div class="panel">
+
+            <a href="">Newsroom</a>
+            <a href="">Apple Leadership</a>
+        <a href="">Investors</a>
+            <a href="">Contact Apple</a>
+        </div>
+           
+    </div>
+    <div id="section-ten">
+
+        <p><a href="">find a retailler</a> near you</p>
+
+        <p>South Africa</p>
+        <p>copyright &copy; 2020 Apple inc. All rightd reserved.</p>
+        <div id="bottom-bar">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Legal</a>
+            <a href="">Site Map</a>
+        </div>
+        </div>
+
+</div>
+
+</main>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for(i = 0; i < acc.length; i++){
+        acc[i].addEventListener("click", function(){
+                    /*Toggle between adding and removing the "active"
+                     class to hinglight the button that controls the panels*/
+                            this.classList.toggle("active")
+                /*to Toggle between hiding and showing the active panel*/
+                var panel = this.nextElementSibling;
+                        if(panel.style.maxHeight){
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+        });
+    }
+</script>
+</body>
+
+</html>

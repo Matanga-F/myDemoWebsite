@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: #ffffff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+
+}
+
+/*section text alignment to the center,
+ and the height of each section*/
+#section-two, #section-three, #section-four, #section-five,
+#section-six, #section-seven {
+
+    width: 100%;
+    height:520px;
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+
+}
+/*section one styles */
+#section-one  {
+    width: 100%;
+    height: 520px;
+    text-align: center;
+    color: #F5F5F7;
+    background: #131313;
+}
+
+#section-one {
+    background: #131313;
+    z-index: -1;
+
+}
+ #section-one h3{
+     padding-top: 3em;
+     padding-bottom: 5px;
+ }
+ #section-one p {
+     padding-bottom: 5px
+ }
+
+/*links and hover efects*/
+a {
+    color: #226BB0;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+a {
+    padding-top: 1.5em;
+}
+a:hover, a:active {
+    color: #0c59bee0;
+    border-bottom: 2px solid #0b07da;
+}
+
+/*------------------------------------------------*/
+
+#section-two {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    background: #fafafa
+
+}
+#section-two h3, p {
+    padding-bottom: 5px;
+}
+
+#section-two h3 {
+    color: #000;
+    padding-top: 1em;
+    font-size: 30px;
+}
+/*--------------------------------------------------*/
+#section-three {
+    padding: 20px;
+    width: 100%;
+    background: #000;
+}
+
+/*---------------------------------------------------*/
+
+#section-three, #section-four, #section-five, #section-eight {
+    background: #333;
+}
+/*--------------------------------------------------*/
+#section-nine, #section-ten {
+    font-size: 15px;
+    background: #F5F5F7;
+
+}
+
+#para {
+    font-size: 15px;
+    font-weight: 100px;
+    padding: 3px;
+    opacity: 0.6;
+}
+
+/*section eight styles*/
+#section-eight {
+    background: #F5F5F7;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 5px;
+    padding: 5px;
+}
+#section-eight {
+    padding-bottom: 2em;
+    border-bottom: 0.5px solid #64656b;
+    border-width: 50%;
+}
+/*section-nine atyles */
+#section-nine p {
+        margin: auto;
+        padding-top: 3px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 4px;
+        border-bottom: 0.8px dotted #64656b;
+}
+
+#section-nine {
+    margin-left: 4px;
+    margin-right: 4px;
+    
+}
+
+/*--------------------------------------------*/
+/*part of javascript*/
+
+.accordion {
+    background: #333;
+
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+.accordion:after {
+    content: "\002B";
+    color: #333;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.active:after {
+    content: "\2212";
+    color: #333;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+
+
+  .panel {
+    padding: 0 18px;
+    background-color: #444;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+  }
+
+.panel a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(68, 66, 182);
+    padding: 3px;
+}
+
+.panel a:hover {
+    border: none;
+    color: rgba(209, 212, 209, 0.815);
+}
